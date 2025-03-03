@@ -1,0 +1,115 @@
+.slider-area {
+    position: relative;
+    z-index: 1;
+    .shape-one {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 400px;
+        height: 425px;
+        @include xs{display: none;}
+        @include md{max-width: 200px; width: 100%; max-height: 300px;}
+        @include lg{max-width: 200px; width: 100%; max-height: 200px;}
+        @include xl{max-width: 300px; width: 100%; max-height: 250px;}
+        .shape-one img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.single-slider-wrapper {
+    position: relative;
+    padding: 269px 0 270px 0;
+    min-height: 500px;
+    overflow: hidden;
+    @include xs{padding: 100px 0 100px 0;}
+    @include sm{padding: 100px 0 100px 0;}
+    @include lg{padding: 100px 0 100px 0;}
+    .single-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: slideInup 8s linear 1s infinite;
+    }
+}
+
+.slider-content-wrap {
+    .slider-content {
+        p.sub-title {
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+            margin-bottom: 0;
+            letter-spacing: 15px;
+            font-weight: 600;
+            @include xs{letter-spacing: 10px; font-weight: 500; font-size: 16px;}
+        }
+        h2.short-title {
+            font-size: 100px;
+            line-height: 110px;
+            color: #fff;
+            margin-bottom: 20px;
+            @include xs{font-size: 40px; line-height: 50px; font-weight: 600;}
+            @include sm{font-size: 50px; line-height: 60px; font-weight: 600;}
+            @include md{font-size: 90px; line-height: 100px;}
+            @include lg{font-size: 90px; line-height: 100px;}
+            @include xl{font-size: 80px; line-height: 100px;}
+            @include rmaxwd(1020){font-size: 88px; line-height: 100px;}
+            @include rmaxwd(1440){font-size: 90px; line-height: 100px;}
+            > b {
+                color: $secondary-color;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: 32px;
+                    left: 0;
+                    width: 100%;
+                    border-bottom: 5px dashed $secondary-color;
+                    @include xs{bottom: 8px;}
+                    @include sm{bottom: 8px;}
+                }
+            }
+        }
+    }
+}
+
+.slider-wrapper button {
+    background: none;
+    border: 0 none;
+    &.next-btn > i {
+        bottom: 53%;
+        top: auto;
+    }
+        i {
+        color: #fff;
+        font-size: 14px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ff3d4f;
+        border-radius: 50%;
+        opacity: .4;
+        transition: .4s ease-in-out;
+        box-shadow: 0 0 40px 0 #fff;
+        z-index: 1;
+        position: absolute;
+        right: 208px;
+        top: 50%;
+        transform: translateY(-50%);
+        @include xs{display: none;}
+        @include sm{right: 30px;}
+        @include md{right: 30px;}
+        &.active{opacity: 1;}
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

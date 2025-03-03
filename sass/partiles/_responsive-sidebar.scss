@@ -1,0 +1,81 @@
+.mean-container{
+    .mean-bar {
+        background: none !important;
+        .meanmenu-reveal{
+            display: none !important;
+        }
+        .mean-nav {
+            background: none !important;
+            > ul {
+                display: block !important;
+                li{
+                    &:nth-child(1) > a{
+                        border-top: 0 none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mean-container {
+    .mean-nav{
+        ul{
+            li{
+                a{
+                    padding: 10px 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+.sidebar-bottom-area-wrap {
+
+    .sidebar-bottom {
+
+        .search-bar {
+            .form-input-group {
+                position: relative;
+                input{
+                    border: 0;
+                    background: none;
+                    width: 100%;
+                    padding: 12px;
+                    padding-left: 65px;
+                    background: #ddd;
+                    font-size: 17px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #000;
+                    margin-top:40px;
+                    @include transition;
+                    position: relative;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                label{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    > i{
+                        color: #ff3d4f;
+                        cursor: pointer;
+                        transition: .3s;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include transition;
+                        background: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+

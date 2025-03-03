@@ -1,0 +1,115 @@
+
+
+.service-area {
+    position: relative;
+    z-index: 1;
+    padding: 89px 0 160px 0;
+    margin-bottom: 180px;
+    &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: -1;
+        opacity: .8;
+    }
+    .service-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/images/service/service-shape/service-shape-1.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .section-title-wrapper{
+        .section-title{
+            .section-top-title {
+                display: flex;
+                align-items: center;
+                .sub-title{
+                    color: #FE6809;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                }
+                .title-3-line {
+                    padding-left: 5px;
+                    span {
+                        width: 20px;
+                        height: 1px;
+                        background-color: #FE6809;
+                        display: block;
+                        margin: 2px 0;
+                        margin-top: 0;
+                        &:nth-child(2) {
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+            .title-desc{color: $white;}
+        }
+    }
+
+    .single-service-wrapper {
+        .single-service-content{
+            padding: 40px 26px;
+            background: #fff;
+            position: relative;
+            z-index: 1;
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: #FE6809;
+                transition: .4s ease-in-out;
+                z-index: -1;
+            }
+            &:hover > .service-desc-text{color: #fff;}
+            &:hover::after{
+                height: 100%;
+            }
+            &:hover .service-logo {
+                > i{
+                    background-color: #FE6809;
+                    box-shadow: 0 0 32px 0 #fff;
+                    color: #fff;
+                }
+            }
+
+            .service-top-area{
+                .service-logo > i{
+                    width: 70px;
+                    height: 70px;
+                    background-color: #f5f5f5;
+                    color: #FE6809;
+                    font-size: 38px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    padding: 15px;
+                }
+                .service-title{padding-left: 15px; padding-top: 2px; padding-bottom: 2px;}
+            }
+
+            .service-desc-text{
+                margin-top: 20px;
+            }
+            
+        }
+    }
+
+}
+
+.absolute-service-area{position: absolute; left: 15px; top: 130px; width: 100%;}
