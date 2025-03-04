@@ -91,7 +91,7 @@
                     border-bottom: 5px dashed $secondary-color;
                     @include xs{bottom: 8px;}
                     @include sm{bottom: 8px;}
-                    @include rmaxwd(2500){bottom: 15px;}
+                    @include rmaxwd(2500){bottom: 5px;}
                 }
             }
         }
