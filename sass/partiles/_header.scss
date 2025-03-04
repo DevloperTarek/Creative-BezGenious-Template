@@ -1,7 +1,11 @@
 
 // Header one
 .header-area{
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 .header-menu-area{
     @include md{padding: 10px 0;}

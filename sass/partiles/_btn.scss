@@ -6,6 +6,7 @@
     color: #fff;
     font-size: 17px;
     font-weight: 600;
+    letter-spacing: 2px;
     text-transform: capitalize;
     padding: 15px 30px;
     background: #FE6809;
@@ -23,10 +24,11 @@
         background: $white;
         transform: skewY(-45deg) translate(-50%, -50%);
         z-index: 1;
-        opacity: .6;
+        opacity: .4;
         box-shadow: 0 24px 62px 0 $white;
     }
     &:hover{
+        color: $white;
         &::after{
             animation: slideInRight .8s linear;
         }

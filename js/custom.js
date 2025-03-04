@@ -95,6 +95,40 @@
             return /\u00A0/.test($(this).text());
         }).hide();
 
+        // Brand
+
+        $('.active-brand-slide-infinite').slick({
+            autoplay: true,
+            autoplaySpeed: 0,
+            // margin: 20,
+            speed: 5000,
+            arrows: false,
+            swipe: false,
+            slidesToShow: 5,
+            cssEase: 'linear',
+            pauseOnFocus: false,
+            pauseOnHover: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+            ],
+        })
         /*
        Slider
        ============================*/

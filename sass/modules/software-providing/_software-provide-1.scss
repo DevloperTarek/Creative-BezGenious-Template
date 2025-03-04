@@ -1,88 +1,286 @@
-.software-left-area {
-    position: relative;
-    // Big Image Area
-    .software-big-image-wrap {
-        width: 100%;
-        border-radius: 218px;
-        max-width: 440px;
-        .software-big-image {
+
+.software-providing-area{
+    &.section-padding{
+        @include rmaxwd(1440){padding-top: 260px;}
+        @include rmaxwd(2560){padding-top: 260px;}
+        @include rmaxwd(1200){padding-top: 100px;}
+        @include rmaxwd(540){padding-top: 20px;}
+    }
+    .software-providing-wrapper{
+        // left area styling
+        .software-left-area-wrap {
             position: relative;
             z-index: 1;
-            &::before {
-                content: "";
+            // shapes
+            .software-shape-1 {
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 200%;
-                height: 40px;
-                background: #000;
-                transform: translate(-50%,-50%) skew(-11deg, 51deg);
-                opacity: .3;
-                box-shadow: 0  -29px 35px 10px #000;
-                z-index: 2;
+                top: 0;
+                right: 60px;
+                z-index: -1;
+                animation: slideinup 3s ease-in 1s infinite alternate;
             }
-            &:hover::after{animation: slideinupdown 1s linear infinite;}
-        }
-    }
-    // Small Image Area
-    .software-child-small-image-wrap {
-        position: absolute;
-        bottom: 0px;
-        right: -70px;
-        .software-child-small-image {
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
-            img{width: 100%;}
-
-            .software-child-content-wrap {
+            .software-shape-2 {
                 position: absolute;
-                text-align: center;
-                .software-child-content{
-                    .play-video {
-                        display: inline-block;
-                        position: relative;
+                top: 0;
+                right: 0;
+                z-index:-1;
+                animation: slideDown 1s ease-in infinite alternate;
+                @include rmaxwd(1245){right: -80px;}
+                @include sm{display: none;}
+            }
+            .software-shape-3 {
+                position: absolute;
+                bottom: -80px;
+                left: 0;
+                animation: slideinup 2s ease-in infinite alternate;
+                @include sm{display: none;}
+            }
+            .software-left-wrap-image-area{
+                // Big Image Area
+                .software-providing-big-image-wrap {
+                    width: 100%;
+                    border-radius: 218px;
+                    max-width: 440px;
+                    @include sm{display: none;}
+                    position: relative;
+                    z-index: 1;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 200%;
+                        height: 40px;
+                        background: #fff;
+                        transform: translate(-50%,-50%) skew(-11deg, 51deg);
+                        opacity: 0;
+                        box-shadow: 0  -29px 40px 10px #fff;
                         z-index: 1;
-                        width: 60px;
-                        height: 60px;
-                        margin-bottom: 10px;
-                        > i {
-                            width: 60px;
-                            height: 60px;
-                            text-align: center;
-                            line-height: 60px;
-                            background: #FE6809;
-                            border-radius: 50%;
-                            color: #fff;
-                            cursor: pointer;
-                            transition: all .4s ease-in-out;
-                            margin-bottom: 10px;
-                            position: relative;
-                            box-shadow: 0 0 30px 0 #fff;
-                        }
-                        &::before {
+                    }
+                    &:hover::before{animation: slideinupdown .7s ease-in;}
+                }
+                // Small Image Area
+                .software-providing-small-image-wrap {
+                    position: absolute;
+                    bottom: 0;
+                    z-index: 1;
+                    right: 0;
+                    @include rmaxwd(1245){right: -80px;}
+                    @include sm{position: static; margin-top: 40px;}
+                    .software-providing-small-image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+            
+                        img{width: 100%;}
+            
+                        .software-providing-small-content {
                             position: absolute;
-                            content: "";
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            background: #fff;
-                            border-radius: 50%;
-                            animation: slideinup 1s ease-out 1s infinite;
-                            //animation: slideinup 1s  3s infinite;
+                            text-align: center;
+                            .play-video {
+                                display: inline-block;
+                                position: relative;
+                                z-index: 1;
+                                width: 60px;
+                                height: 60px;
+                                margin-bottom: 10px;
+                                > i {
+                                    width: 60px;
+                                    height: 60px;
+                                    text-align: center;
+                                    line-height: 60px;
+                                    background: #FE6809;
+                                    border-radius: 50%;
+                                    color: #fff;
+                                    cursor: pointer;
+                                    transition: all .4s ease-in-out;
+                                    margin-bottom: 10px;
+                                    position: relative;
+                                    box-shadow: 0 0 30px 0 #fff;
+                                }
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background: #fff;
+                                    border-radius: 50%;
+                                    animation: slideinup 1s ease-out 1s infinite;
+                                    //animation: slideinup 1s  3s infinite;
+                                }
+                            }
+                            .small-content-title {
+                                color: #fff;
+                                font-size: 16px;
+                                font-family: 'Manrope';
+                                font-weight: 500;
+                            }
                         }
                     }
-                    .play-video-title {
+                }
+            }
+        }
+        // right area styling
+        .software-desc-text {
+            max-width: 526px;
+            font-size: 16px;
+            line-height: 29px;
+            color: #666;
+            text-align: left;
+        }
+
+        .software-consulting-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include sm{flex-direction: column; align-items: start;}
+        }
+
+        .consulting-bar-list-wrap {
+            max-width: 323px;
+            width: 100%;
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li {
+                    position: relative;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 500;
+                    font-family: 'Teko',sans-serif;
+                    padding-left: 35px;
+                    margin-bottom: 15px;
+                    text-transform: capitalize;
+                    &::before{
+                        position: absolute;
+                        content: "\f105";
+                        font-family: 'Font Awesome 6 pro';
+                        left: 0;
+                        width: 20px;
+                        height: 20px;
+                        background: #666666;
+                        text-align: center;
+                        border-radius: 30px;
                         color: #fff;
-                        font-size: 16px;
-                        font-family: 'Manrope';
-                        font-weight: 500;
+                        font-size: 13px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 11px;
+                        top: 4px;
+                        
+                    }
+                }
+            }
+        }
+        .consulting-tag-content {
+            text-align: center;
+            padding: 30px;
+            background: #F5F5F5;
+            border-radius: 10px;
+            color: #FE6809;
+            width: 152px;
+            height: 122px;
+            justify-content: center;
+            border-bottom: 3px solid #FE6809;
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 7px;
+                right: 5px;
+                width: 157px;
+                height: 123px;
+                background: transparent;
+                border: 1px solid #f5f5f5;
+                content: "";
+                border-radius: 10px;
+                z-index: -2;
+                box-shadow: 0 0 32px 0 #F5F5F5;
+                transition: all .4s ease-out;
+            }
+            &:hover::before {
+                bottom: -7px;
+                right: -8px;
+            }
+            i {
+                width: 32px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                font-size: 32px;
+            }
+            .tag-title {
+                margin-top: 10px;
+                color: #1F1F1F;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
+
+        // software-consulting-bottom content
+
+        .software-right-content-wrapper {
+            padding-left: 110px;
+            @include sm{padding-left: 0;}
+            .horizontal-line {
+                background-color: #F0F0F0;
+                height: 1px;
+                width: 100%;
+                margin: 32px 0;
+            }
+            .software-consulting-bottom-area-wrap {
+                padding: 13px 0;
+                .software-consulting-area {
+                    @include sm{flex-direction: column; align-items: center; justify-content: center;}
+                    .software-consulting-contact-wraper {
+                        padding-left: 70px;
+                        .software-cunsulting-contact {
+                            .consulting-contact-logo {
+                                > i {
+                                    width: 35px;
+                                    height: 35px;
+                                    background: #f5f5f5;
+                                    text-align: center;
+                                    line-height: 35px;
+                                    color: #FE6809;
+                                    border-radius: 30px;
+                                    cursor: pointer;
+                                    transition: all .4s ease-out;
+                                }
+                            }
+                            .consulting-contact-content {
+                                padding-left: 13px;
+                                > p {
+                                    margin-bottom: 0;
+                                    font-size: 16px;
+                                    color: #1F1F1F;
+                                }
+                                .consulting-number {
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    line-height: 30px;
+                                    margin-bottom: 0;
+                                    > a {
+                                        color: #1f1f1f;
+                                        text-decoration: none;
+                                        font-weight: 600;
+                                        font-size: 20px;
+                                        font-family: 'Teko',sans-serif;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
-
+        

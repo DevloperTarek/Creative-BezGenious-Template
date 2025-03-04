@@ -2,19 +2,15 @@
 
 .service-area {
     position: relative;
-    z-index: 1;
-    padding: 89px 0 160px 0;
-    margin-bottom: 180px;
-    &::after{
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #000;
-        z-index: -1;
-        opacity: .8;
+    z-index: 2;
+    padding: 89px 0 100px 0;
+    @include xl{
+        margin-bottom: 180px;
+        padding: 89px 0 160px 0;
+    }
+    @include lg{
+        margin-bottom: 180px;
+        padding: 89px 0 160px 0;
     }
     .service-wrapper {
         position: absolute;
@@ -27,40 +23,33 @@
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -1;
-    }
-
-    .section-title-wrapper{
-        .section-title{
-            .section-top-title {
-                display: flex;
-                align-items: center;
-                .sub-title{
-                    color: #FE6809;
-                    font-weight: 500;
-                    margin-bottom: 5px;
-                }
-                .title-3-line {
-                    padding-left: 5px;
-                    span {
-                        width: 20px;
-                        height: 1px;
-                        background-color: #FE6809;
-                        display: block;
-                        margin: 2px 0;
-                        margin-top: 0;
-                        &:nth-child(2) {
-                            width: 10px;
-                        }
-                    }
-                }
-            }
-            .title-desc{color: $white;}
+        &::after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            z-index: -1;
+            opacity: .6;
         }
     }
 
     .single-service-wrapper {
+        // @include sm{width: auto;}
+        // @include md{width: 100%;}
         .single-service-content{
-            padding: 40px 26px;
+            @include xs{min-width: 250px; width: 100%;}
+            @include sm{width: auto;}
+            @include xl{
+                max-width: 306px;
+                width: 100%;
+                min-height: 258px;
+            }
+            text-align: left;
+            height: 100%; 
+            padding: 40px 29px;
             background: #fff;
             position: relative;
             z-index: 1;
@@ -105,6 +94,10 @@
 
             .service-desc-text{
                 margin-top: 20px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 29px;
+                color: #666;
             }
             
         }
@@ -112,4 +105,50 @@
 
 }
 
-.absolute-service-area{position: absolute; left: 15px; top: 130px; width: 100%;}
+.absolute-service-area{position: absolute; left: 15px; 
+    top: 209px;
+     width: 100%; 
+     @include sm{position: static;} 
+     @include md{position: static;}
+    @include rmaxwd(1440){top: 200px;}
+}
+
+
+
+// Section Title
+
+
+    .section-title-wrapper{
+        position: relative;
+        z-index: 1;
+        .section-title{
+            .section-top-title {
+                display: flex;
+                align-items: center;
+                .sub-title{
+                    color: #FE6809;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                }
+                .title-3-line {
+                    padding-left: 5px;
+                    span {
+                        width: 20px;
+                        height: 1px;
+                        background-color: #FE6809;
+                        display: block;
+                        margin: 2px 0;
+                        margin-top: 0;
+                        &:nth-child(2) {
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+            .title-desc{color: $white; font-size: 50px; line-height: 60px; font-weight: 500; margin-bottom: 34px;}
+            .software-title{color: #18191D;
+                font-size: 50px; line-height: 60px; font-weight: 600;
+                b{color: #FE6809;}
+            }
+        }
+    }
