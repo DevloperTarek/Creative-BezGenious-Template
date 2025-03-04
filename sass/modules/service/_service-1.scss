@@ -111,6 +111,8 @@
      @include sm{position: static;} 
      @include md{position: static;}
     @include rmaxwd(1440){top: 200px;}
+    @include rmaxwd(1280){top: 230px;}
+    @include rmaxwd(2500){top: 150px;}
 }
 
 
