@@ -110,9 +110,9 @@
      width: 100%; 
      @include sm{position: static;} 
      @include md{position: static;}
-    @include rmaxwd(1440){top: 180px;}
-    @include rmaxwd(1280){top: 180px;}
-    @include rmaxwd(2500){top: 100px;}
+    @include rmaxwd(1440){top: 210px;}
+    @include rmaxwd(1280){top: 210px;}
+    @include rmaxwd(2500){top: 180px;}
 }
 
 
