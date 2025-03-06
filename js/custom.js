@@ -110,19 +110,31 @@
             pauseOnHover: true,
             responsive: [
                 {
+                    breakpoint: 2800,
+                    settings: {
+                        slidesToShow: 4,
+                    },
+                },
+                {
+                    breakpoint: 2000,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
                     breakpoint: 992,
                     settings: {
                         slidesToShow: 3,
                     },
                 },
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 768,
+                 {
+                    breakpoint: 767,
                     settings: {
                         slidesToShow: 2,
                     },
