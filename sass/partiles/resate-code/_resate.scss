@@ -1,0 +1,21 @@
+body{overflow-x: hidden;
+    @include xs{overflow-x: hidden;}
+}
+section{
+    @include xs{overflow-x: hidden;}
+    @include sm{overflow-x: hidden;}
+}
+.container{
+    min-width: 1460px;
+    width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $font-primary;
+    font-weight: bold;
+}
+p,span,a,input,textarea{
+    font-family: $font-secondary;
+    font-weight: normal;
+}

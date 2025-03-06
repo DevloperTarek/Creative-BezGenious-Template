@@ -1,7 +1,7 @@
 .brand-area{
     background-color: #FE6809;
-    padding: 20px 0;
-    margin: 40px 0;
+    padding: 40px 0;
+    //margin: 40px 0;
 
     .active-brand-slide-infinite {
         .single-brand {
@@ -20,8 +20,9 @@
             text-transform: capitalize;
             @include lg{font-size: 25px;};
             @include md{font-size: 20px;};
-            @include sm{font-size: 17px;}
-            @include xl{font-size: 20px;}
+            @include sm{font-size: 20px;}
+            @include xl{font-size: 40px;}
+            @include rmaxwd(3000){font-size: 40px;}
         }
     }
 }

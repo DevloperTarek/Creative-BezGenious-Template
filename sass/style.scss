@@ -68,19 +68,4 @@
 @import './modules/software-providing/software-provide-1';
 @import './modules/why-choose-agent/why-choose-agent';
 @import './modules/Brand/brand-area';
-
-
-
-.container{
-    max-width: 1400px;
-    margin: auto;
-    padding: 0 2rem;
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: $font-primary;
-    font-weight: bold;
-}
-p,span,a,input,textarea{
-    font-family: $font-secondary;
-    font-weight: normal;
-}
+@import './modules/faq/faq-1';

@@ -653,4 +653,52 @@
   animateOnScroll();
 
     });
+
+
+
+
+    // Accordion show and hide
+
+    // $('.toggle').click(function(e) {
+  	// e.preventDefault();
+//
+    // let $this = $(this);
+//
+    // if ($this.next().hasClass('show')) {
+        // $this.next().removeClass('show');
+        // $this.next().slideUp(350);
+    // } else {
+        // $this.parent().parent().find('li .inner').removeClass('show');
+        // $this.parent().parent().find('li .inner').slideUp(350);
+        // $this.next().toggleClass('show');
+        // $this.next().slideToggle(350);
+    // }
+    // });
+
+    // $('.toggle').click(function (e) {
+        // e.preventDefault();
+        // $this = $(this);
+        // if ($this.next().hasClass('show')) {
+            // $this.next().removeClass('show');
+        // } else {
+            // $this.next().toggleClass('show');
+            // $this.children().toggleClass('fa-times');
+        // }
+    // })
+
+    $('.toggle').click(function (e) {
+        e.preventDefault();
+
+        let $this = $(this);
+
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(350);
+        } else {
+            $this.parent().parent().find('li .inner').removeClass('show');
+            $this.parent().parent().find('li .inner').slideUp(350);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(350);
+        }
+    })
 })(jQuery);
