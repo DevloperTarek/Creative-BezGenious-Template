@@ -63,22 +63,99 @@
   }
   
   @font-face {
-    font-family: 'Manrope'; /*a name to be used later*/
-    src: url('/fonts/Manrope-Bold.ttf'); /*URL to font*/
-    src: url('/fonts/Manrope-ExtraBold.ttf'); /*URL to font*/
-    src: url('/fonts/Manrope-ExtraLight.ttf'); /*URL to font*/
-    src: url('/fonts/Manrope-Light.ttf'); /*URL to font*/
-    src: url('/fonts/Manrope-Medium.ttf'); /*URL to font*/
-    src: url('/fonts/Manrope-Regular.ttf'); /*URL to font*/
-    src: url('/fonts/Manrope-SemiBold.ttf'); /*URL to font*/
-    src: url('/fonts/Manrope-VariableFont_wght.ttf'); /*URL to font*/
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Regular.ttf') format('ttf');
+
+    font-weight: 400; //normal
+    font-style: normal;
   }
-  
+
   @font-face {
-    font-family: 'Teko';
-    src: url('/fonts/Teko-Bold.ttf');
-    src: url('/fonts/Teko-Light.ttf');
-    src: url('/fonts/Teko-Medium.ttf');
-    src: url('/fonts/Teko-Regular.ttf');
-    src: url('/fonts/Teko-SemiBold.ttf');
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Medium.ttf') format('ttf');
+    font-weight: 500; //normal
+    font-style: normal;
   }
+
+  @font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-SemiBold.ttf') format('ttf');
+  font-weight: 600; //normal
+  font-style: normal;
+}
+
+  @font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Light.ttf') format('ttf');
+  font-weight: 700; //normal
+  font-style: normal;
+}
+
+  @font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Bold.ttf') format('ttf');
+  font-weight: 800; //normal
+  font-style: normal;
+}
+
+  @font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-ExtraBold.ttf') format('ttf');
+  font-weight: 900; //normal
+  font-style: normal;
+}
+
+// Teko FONTS
+@font-face {
+    font-family: 'Teko';
+    src: url('../fonts/Teko-Light.woff2') format('woff2'),
+         url('../fonts/Teko-Light.woff') format('woff'),
+         url('../fonts/Teko-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('../fonts/Teko-Regular.ttf') format('ttf');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('../fonts/Teko-Medium.ttf') format('ttf');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('../fonts/Teko-SemiBold.ttf') format('ttf');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('../fonts/Teko-Bold.ttf') format('ttf');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('../fonts/Teko-Light.ttf') format('ttf');
+    font-weight: 800; /* Bold */
+    font-style: normal;
+}
+
+
+// @font-face {
+    // font-family: 'Teko';
+    // src: url('../fonts/Teko-Bold.woff2') format('woff2'),
+        //  url('../fonts/Teko-Bold.woff') format('woff');
+    // font-weight: bold;
+    // font-style: normal;
+// }
+// 
