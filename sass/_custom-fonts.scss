@@ -87,33 +87,33 @@
   @font-face {
   font-family: 'Manrope';
   src: url('../fonts/Manrope-Light.ttf') format('ttf');
-  font-weight: 700; //normal
+  font-weight: 300; //normal
   font-style: normal;
 }
 
   @font-face {
   font-family: 'Manrope';
   src: url('../fonts/Manrope-Bold.ttf') format('ttf');
-  font-weight: 800; //normal
+  font-weight: 700; //normal
   font-style: normal;
 }
 
   @font-face {
   font-family: 'Manrope';
   src: url('../fonts/Manrope-ExtraBold.ttf') format('ttf');
-  font-weight: 900; //normal
+  font-weight: 800; //normal
   font-style: normal;
 }
 
 // Teko FONTS
-@font-face {
-    font-family: 'Teko';
-    src: url('../fonts/Teko-Light.woff2') format('woff2'),
-         url('../fonts/Teko-Light.woff') format('woff'),
-         url('../fonts/Teko-Light.ttf') format('truetype');
-    font-weight: 300; /* Light */
-    font-style: normal;
-}
+// @font-face {
+    // font-family: 'Teko';
+    // src: url('../fonts/Teko-Light.woff2') format('woff2'),
+        //  url('../fonts/Teko-Light.woff') format('woff'),
+        //  url('../fonts/Teko-Light.ttf') format('truetype');
+    // font-weight: 300; /* Light */
+    // font-style: normal;
+// }
 
 @font-face {
     font-family: 'Teko';
@@ -146,7 +146,7 @@
 @font-face {
     font-family: 'Teko';
     src: url('../fonts/Teko-Light.ttf') format('ttf');
-    font-weight: 800; /* Bold */
+    font-weight: 300; /* Bold */
     font-style: normal;
 }
 
