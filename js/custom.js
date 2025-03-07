@@ -112,13 +112,13 @@
                 {
                     breakpoint: 2800,
                     settings: {
-                        slidesToShow: 4,
+                        slidesToShow: 5,
                     },
                 },
                 {
                     breakpoint: 2000,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                     },
                 },
                 {

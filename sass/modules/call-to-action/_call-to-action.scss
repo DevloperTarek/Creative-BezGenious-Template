@@ -35,7 +35,7 @@
             color: #fff;
             font-size: 50px;
             line-height: 60px;
-            font-weight: 700;
+            font-weight: 600;
             font-family: 'Teko',sans-serif;
             margin-bottom: 0;
             @include rmaxwd(1150){font-size: 40px;}
@@ -43,7 +43,8 @@
             @include rmaxwd(992){font-size: 30px; line-height: 45px;}
             @include rmaxwd(767){font-size: 25px; line-height: 40px;}
             @include rmaxwd(480){font-size: 20px; line-height: 30px;}
-            @include xs{font-size: 20px; line-height: 40px;}
+            @include xs{font-size: 30px; line-height: 40px;}
+            @include sm{font-size: 30px; line-height: 40px;}
             @include rmaxwd(250){font-size: 20px; line-height: 20px;}
         }
     }

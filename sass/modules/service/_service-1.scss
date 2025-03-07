@@ -4,6 +4,7 @@
     position: relative;
     z-index: 2;
     padding: 89px 0 100px 0;
+    min-height: 402px;
     @include xl{
         margin-bottom: 180px;
         padding: 89px 0 160px 0;
@@ -25,34 +26,36 @@
                 align-items: center;
                 .sub-title{
                     color: #FE6809;
-                    font-weight: 500;
-                    font-size: 16px;
-                    font-family: 'Teko',sans-serif;
-                    letter-spacing: 4px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-family: "Teko", sans-serif;
+                    letter-spacing: 1px;
                     margin-bottom: 5px;
+                    text-transform: uppercase;
                 }
                 .title-3-line {
-                    padding-left: 5px;
+                    padding-left: 8px;
                     span {
-                        width: 20px;
+                        width: 24px;
                         height: 1px;
                         background-color: #FE6809;
                         display: block;
-                        margin: 2px 0;
+                        margin: 3px 0;
                         margin-top: 0;
                         &:nth-child(2) {
-                            width: 10px;
+                            width: 12px;
                         }
                     }
                 }
             }
             .title-desc{color: $white; font-size: 50px; font-family: 'Teko',sans-serif;
-             line-height: 60px; font-weight: 500; margin-bottom: 34px;
+                        line-height: 60px; font-weight: 400; margin-bottom: 34px;
                 // @include xl{font-size: 40px;} @include md{font-size: 30px;} @include lg{font-size: 30px;}
                 // @include sm{font-size: 25px;}@include rmaxwd(3000){font-size: 40px;}
             }
             .software-title{color: #18191D;
-                font-size: 50px; line-height: 60px; font-weight: 600; font-family: 'Teko',sans-serif;
+                font-size: 50px; line-height: 60px; font-weight: 400; font-family: 'Teko',sans-serif;
                 b{color: #FE6809;}
             }
         }
@@ -86,12 +89,13 @@
         position: absolute; 
         left: 15px; 
         width: 100%; 
+        top: 185px;
         @include sm{position: static;} ;
         @include md{position: static;};
-        @include rmaxwd(1640){top: 100px;};
-        @include rmaxwd(960){position: static};
-        @include rmaxwd(1180){top: 190px;};
-        @include rmaxwd(3000){top: 150px;};
+        //@include rmaxwd(1640){top: 100px;};
+        @include lg{position: static};
+        //@include rmaxwd(1180){top: 190px;};
+        //@include rmaxwd(3000){top: 150px;};
 
         .single-service-wrapper {
             // @include sm{width: auto;}

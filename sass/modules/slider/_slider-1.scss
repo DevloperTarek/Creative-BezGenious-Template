@@ -66,7 +66,7 @@
             letter-spacing: 15px;
             font-family: 'Teko',sans-serif;
             font-weight: 600;
-            @include xs{letter-spacing: 10px; font-weight: 500; font-size: 16px;}
+            @include xs{letter-spacing: 15px; font-weight: 600; font-size: 16px;}
         }
         h2.short-title {
             font-size: 100px;
@@ -74,13 +74,13 @@
             color: #fff;
             font-family: 'Teko',sans-serif;
             margin-bottom: 20px;
-            @include rmaxwd(240){font-size: 20px; line-height: 40px; font-weight: 500;}
-            @include sm{font-size: 40px; line-height: 60px; font-weight: 600;}
-            @include md{font-size: 90px; line-height: 100px;}
-            @include lg{font-size: 90px; line-height: 100px;}
-            @include xl{font-size: 80px; line-height: 100px;}
-            @include rmaxwd(1020){font-size: 88px; line-height: 100px;}
-            @include rmaxwd(2800){font-size: 80px; line-height: 100px;}
+            @include xs{font-size: 60px; line-height: 70px; font-weight: 600;}
+            @include sm{font-size: 85px; line-height: 80px; font-weight: 600;}
+            //@include md{font-size: 90px; line-height: 100px;}
+            //@include lg{font-size: 90px; line-height: 100px;}
+            //@include xl{font-size: 80px; line-height: 100px;}
+            //@include rmaxwd(1020){font-size: 88px; line-height: 100px;}
+            //@include rmaxwd(2800){font-size: 80px; line-height: 100px;}
             //@include rmaxwd(2500){font-size: 80px; line-height: 100px;}
             > b {
                 color: $secondary-color;
@@ -92,9 +92,9 @@
                     left: 0;
                     width: 100%;
                     border-bottom: 5px dashed $secondary-color;
-                    @include xs{bottom: 8px;}
-                    @include sm{bottom: 8px;}
-                    @include rmaxwd(2500){bottom: 6px;}
+                    // @include xs{bottom: 8px;}
+                    // @include sm{bottom: 8px;}
+                    //@include rmaxwd(2500){bottom: 6px;}
                     //@include rmaxwd(2000){bottom: 16px;}
                 }
             }

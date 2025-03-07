@@ -168,6 +168,8 @@
             //transition: all .5s linear;
             display: none;
             margin-bottom: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
             background-color: #e1e2e7;
         }
         a {
@@ -178,7 +180,8 @@
             padding: 21px 30px;
             color: #1F1F1F;
             background: #E1E2E7;
-            border-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             inset: 2px;
             > i {
                 color: #666;
