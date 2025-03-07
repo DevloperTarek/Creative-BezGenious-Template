@@ -1,21 +1,23 @@
-body{overflow-x: hidden;
-    @include xs{overflow-x: hidden;}
+body{
+    overflow-x: hidden;
+    @include sm{overflow-x: hidden;}
 }
 section{
+    //overflow: hidden;
     @include xs{overflow-x: hidden;}
     @include sm{overflow-x: hidden;}
 }
 .container{
-    min-width: 1460px;
-    width: 100%;
-    margin: auto;
-    padding: 0 2rem;
+    // min-width: 1460px;
+    // width: 100%;
+    // margin: auto;
+    // padding: 0 2rem;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: $font-primary;
+    font-family: 'Teko',sans-serif;
     font-weight: bold;
 }
 p,span,a,input,textarea{
-    font-family: $font-secondary;
+    font-family: 'Manrope',sans-serif;
     font-weight: normal;
 }

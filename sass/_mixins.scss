@@ -127,7 +127,7 @@
 
 // Small devices
 @mixin xs {
-  @media only screen and (min-width: 0px) and (max-width:350px){
+  @media only screen and (min-width: 0px) and (max-width:450px){
       @content;
   }
 }

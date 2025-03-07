@@ -23,13 +23,13 @@
             //  $('#toggle-search-bar').removeClass('active');
             // $(".body-overlay").removeClass("active");
         // });
-        $('.search-toggle-btn').on('click', () => {
+        $('.search-toggle-btn').on('click',function() {
              $('#toggle-search-bar').removeClass('active');
             $(".body-overlay").removeClass("active");
         })
 
         // Search Bar Show 
-        $('#toggle-search-popup-bar').on('click', () => {
+        $('#toggle-search-popup-bar').on('click',function() {
             $('#toggle-search-bar').addClass("active");
             $(".body-overlay").addClass("active");
         })
@@ -243,37 +243,64 @@
         /*
        Client-Slider
        ============================*/
-       $(".client-logo-wrapper").slick({
-        slidesToShow: 5,
+       $(".project-area-active").slick({
+        slidesToShow: 4,
         infinite: true,
+           //centerMode: true,
+        //variableWidth:20,
         autoplay: true,
         draggable: true,
-        arrows: false,
+        arrows: true,
         slidesToScroll: 1,
         loop: true,
         dots: false,
         speed: 1500,
         prevArrow:
-            "<button type='button' class='testimonial-arrow-btn prev-btn'><div class='swip'><div class='title-wrapper'><i class='icon-left-arrow title-1'></i><i class='icon-left-arrow title-2'></i></div></div></button>",
+            "<button type='button' class='portfolio-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
         nextArrow:
-            "<button type='button' class='testimonial-arrow-btn next-btn active'><div class='swip'><div class='title-wrapper'><i class='icon-right-arrow title-1'></i><i class='icon-right-arrow title-2'></i></div></div></button>",
-        responsive: [
+            "<button type='button' class='portfolio-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+           responsive: [
             {
-                breakpoint: 1199,
+                breakpoint: 1409,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                 },
             },
             {
-                breakpoint: 991,
+                breakpoint: 1099,
                 settings: {
                     slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
                 },
             },
             {
                 breakpoint: 767,
                 settings: {
                     slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+
+            {
+                breakpoint: 380,
+                settings: {
+                    slidesToShow: 1,
                 },
             },
         ],

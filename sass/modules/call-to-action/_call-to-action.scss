@@ -1,0 +1,50 @@
+.call-to-action-content-area {
+    position: relative;
+    background: #FE6809;
+    border-radius: 10px;
+    padding: 93px 93px 93px 360px;
+    height: 306px;
+    @include rmaxwd(1150){padding: 50px 50px 50px 360px;}
+    @include rmaxwd(1380){padding: 50px 50px 50px 360px;}
+    @include rmaxwd(767){padding: 50px 30px 30px 300px;}
+    @include sm{padding: 50px 30px 30px 250px;}
+    @include xs{padding: 50px 30px 30px 50px;}
+    .shape-1 {
+        position: absolute;
+        top: 0;
+        left: 93px;
+        @include sm{left: 30px;}
+        @include xs{display: none;}
+        img{
+            &:nth-child(2) {
+                position: absolute;
+                top: 29px;
+                left: 24px;
+                animation: rotateIn360 4s linear infinite;
+            }
+        }
+    }
+    .call-to-action-content {
+        display: flex;
+        align-items: center;
+        gap: 111px;
+        @include rmaxwd(1380){flex-direction: column; gap: 10px; align-items: flex-start;}
+        @include sm{flex-direction: column; gap: 20px; align-items: flex-start;}
+        @include xs{text-align: center; align-items: center; gap: 20px;}
+        .call-to-action-title {
+            color: #fff;
+            font-size: 50px;
+            line-height: 60px;
+            font-weight: 700;
+            font-family: 'Teko',sans-serif;
+            margin-bottom: 0;
+            @include rmaxwd(1150){font-size: 40px;}
+            @include rmaxwd(1380){font-size: 40px;}
+            @include rmaxwd(992){font-size: 30px; line-height: 45px;}
+            @include rmaxwd(767){font-size: 25px; line-height: 40px;}
+            @include rmaxwd(480){font-size: 20px; line-height: 30px;}
+            @include xs{font-size: 20px; line-height: 40px;}
+            @include rmaxwd(250){font-size: 20px; line-height: 20px;}
+        }
+    }
+}

@@ -64,6 +64,7 @@
             color: #fff;
             margin-bottom: 0;
             letter-spacing: 15px;
+            font-family: 'Teko',sans-serif;
             font-weight: 600;
             @include xs{letter-spacing: 10px; font-weight: 500; font-size: 16px;}
         }
@@ -71,6 +72,7 @@
             font-size: 100px;
             line-height: 110px;
             color: #fff;
+            font-family: 'Teko',sans-serif;
             margin-bottom: 20px;
             @include rmaxwd(240){font-size: 20px; line-height: 40px; font-weight: 500;}
             @include sm{font-size: 40px; line-height: 60px; font-weight: 600;}
