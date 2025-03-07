@@ -1,4 +1,13 @@
 
+.team-area{
+    .team-area-wrapper{
+        .team-title-area{
+            .section-title-area-wrapper{
+                @include short-section-title;
+            }
+        }
+    }
+}
 .single-team-membar{
     margin-bottom: 40px;
     .single-team-member-img {

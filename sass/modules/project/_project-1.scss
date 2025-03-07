@@ -1,3 +1,10 @@
+.project-area{
+    .section-title-area-wrapper{
+        @include short-section-title;
+    }
+}
+
+
 
 .single-project-wrapper {
     border-radius: 10px;

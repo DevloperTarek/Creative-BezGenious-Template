@@ -5,6 +5,9 @@
         top: 0;
         right: 0;
     }
+    .section-title-area-wrapper{
+        @include short-section-title;
+    }
 }
 
 .faq-business-absolute-image-wraper {

@@ -15,6 +15,9 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .section-title-area-wrapper{
+        @include short-section-title;
+    }
 }
 .single-choose-agent-wrap {
     position: relative;

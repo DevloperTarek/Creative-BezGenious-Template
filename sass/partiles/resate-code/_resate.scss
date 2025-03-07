@@ -3,7 +3,7 @@ body{
     @include sm{overflow-x: hidden;}
 }
 section{
-    //overflow: hidden;
+    // overflow-x: hidden;
     @include xs{overflow-x: hidden;}
     @include sm{overflow-x: hidden;}
 }

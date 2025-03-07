@@ -80,7 +80,7 @@
             @include lg{font-size: 90px; line-height: 100px;}
             @include xl{font-size: 80px; line-height: 100px;}
             @include rmaxwd(1020){font-size: 88px; line-height: 100px;}
-            @include rmaxwd(2800){font-size: 88px; line-height: 100px;}
+            @include rmaxwd(2800){font-size: 80px; line-height: 100px;}
             //@include rmaxwd(2500){font-size: 80px; line-height: 100px;}
             > b {
                 color: $secondary-color;
