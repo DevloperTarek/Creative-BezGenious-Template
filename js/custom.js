@@ -62,11 +62,11 @@
         const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 
         if (100 < $(window).scrollTop()) {
-            $(".stikcy-header").addClass("sticky_menu");
+            $(".header-menu-area").addClass("sticky_menu");
         }
         
         if( height  > 1400 ) {
-            const nav = $(".stikcy-header");
+            const nav = $(".header-menu-area");
             let scrolled = false;
             $(window).scroll(function(){
                 if(200 < $(window).scrollTop() && !scrolled ){

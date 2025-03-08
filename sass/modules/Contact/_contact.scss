@@ -3,6 +3,8 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    min-height: 676px;
+    padding-top: 80px;
     .section-title-area-wrapper{
         @include short-section-title;
     }
